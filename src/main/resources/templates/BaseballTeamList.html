@@ -1,4 +1,4 @@
-<!-- NasenallTeamList.html -->
+<!-- BasenallTeamList.html -->
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -9,8 +9,8 @@
 <body>
     <h1>野球チーム一覧</h1>
     <span th:each="item:${teamList}">
-        <a href="">
-            <span th:text="${item.team_name}">input here</span>
+        <a th:href="@{/detail(id=${item.id})}">
+            <span th:text="${item.team_name}">team name</span>
         </a><br><br>
     </span>
 </body>

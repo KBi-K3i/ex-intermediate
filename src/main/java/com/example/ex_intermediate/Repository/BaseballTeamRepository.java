@@ -23,7 +23,7 @@ public class BaseballTeamRepository {
             baseballTeam.setId(rs.getInt("id"));
             baseballTeam.setLeague_name(rs.getString("league_name"));
             baseballTeam.setTeam_name(rs.getString("team_name"));
-            baseballTeam.setheadquarters(rs.getString("headquarters"));
+            baseballTeam.setHeadquarters(rs.getString("headquarters"));
             baseballTeam.setInauguration(rs.getString("inauguration"));
             baseballTeam.setHistory(rs.getString("history"));
             return baseballTeam;

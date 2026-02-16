@@ -11,7 +11,7 @@ public class BaseballTeamDomain {
     private String league_name;
     private String team_name;
     private String headquarters; 
-    private String Inauguration;
+    private String inauguration;
     private String history;
 
     /**
@@ -20,7 +20,7 @@ public class BaseballTeamDomain {
     @Override
     public String toString() {
         return "BaseballTeam [id=" + id + ", league_name=" + league_name + ", team_name=" + team_name + ", headquarters="
-                + headquarters + ", Inauguration=" + Inauguration + ", history=" + history + "]";
+                + headquarters + ", inauguration=" + inauguration + ", history=" + history + "]";
     }
 
     /**
@@ -75,7 +75,7 @@ public class BaseballTeamDomain {
      * private String headquartersのgetterである。
      * @return headquarters
      */
-    public String getheadquarters() {
+    public String getHeadquarters() {
         return headquarters;
     }
 
@@ -83,16 +83,16 @@ public class BaseballTeamDomain {
      * private String headquartersのsetterである。
      * @param headquarters
      */
-    public void setheadquarters(String headquarters) {
+    public void setHeadquarters(String headquarters) {
         this.headquarters = headquarters;
     }
 
     /**
      * private String inaugurationのgetterである。
-     * @return Inauguration
+     * @return inauguration
      */
     public String getInauguration() {
-        return Inauguration;
+        return inauguration;
     }
 
     /**
@@ -100,7 +100,7 @@ public class BaseballTeamDomain {
      * @param inauguration
      */
     public void setInauguration(String inauguration) {
-        Inauguration = inauguration;
+        this.inauguration = inauguration;
     }
 
     /**

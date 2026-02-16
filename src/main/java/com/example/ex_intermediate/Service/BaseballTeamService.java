@@ -25,5 +25,4 @@ public class BaseballTeamService {
     public BaseballTeamDomain getSpecificTeam(int id){
         return repository.load(id);
     }
-
 }
