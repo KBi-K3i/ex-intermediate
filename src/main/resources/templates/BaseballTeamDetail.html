@@ -23,9 +23,11 @@
         参考：https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf_ja.html#%E6%96%87%E5%AD%97%E5%88%97 
     -->
     <div th:each="line, status : ${#strings.listSplit(teamDetail.history, '↓')}">
-        <p><span th:text="${line}"></span></p>
-        <p><span th:unless="${status.last}">↓</span></p>
+        <span th:text="${line}"></span><br>
+        <span th:unless="${status.last}">↓</span>
     </div>
+
+    <br>
 
     <form th:action="@{/}">
         <button>戻る</button>
