@@ -15,7 +15,7 @@ public class HotelSearchDomain {
      */
     @Override
     public String toString() {
-        return "HotelSearchDomail [id=" + id + ", areaName=" + areaName + ", hotelName=" + hotelName + ", address="
+        return "HotelSearchDomain [id=" + id + ", areaName=" + areaName + ", hotelName=" + hotelName + ", address="
                 + address + ", nearestStation=" + nearestStation + ", price=" + price + ", parking=" + parking + "]";
     }
 
