@@ -11,12 +11,18 @@ import org.springframework.stereotype.Repository;
 
 import com.example.ex_intermediate.Domian.BaseballTeamDomain;
 
+/**
+ * DBとのやり取りを担う。NamedParameterJdbcTemplateを使用することで、従来までJDBCで書いていた、DBへの接続や切断などの記述を省略可能。
+ */
 @Repository
 public class BaseballTeamRepository {
     
     @Autowired
     private NamedParameterJdbcTemplate template;
 
+    /**
+     * DBのカラムと、JavaのEntity（Domain）の関連付けを行う。
+     */
     private static final RowMapper<BaseballTeamDomain> BASEBALL_TEAM_MAPPER =
         (rs, i) -> {
             BaseballTeamDomain baseballTeam = new BaseballTeamDomain();
